@@ -1,0 +1,14 @@
+body{
+    font-family: sans-serif;
+    color: turquoise;
+}
+
+@import{
+    font-family: 'Titillium Web';
+    font-family: 'Righteous', cursive;
+}
+
+h1{
+    font-family: Righteous;
+    color: yellow;
+}
