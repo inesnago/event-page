@@ -4,54 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Room27</title>
-    <link rel="stylesheet" href="style.css" type="text/css"/>
-    <style>
-@import url('https://fonts.googleapis.com/css?family=Righteous|Titillium+Web:300&display=swap');
-</style>
+    <title>Event27</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
     <header>
 
-        <div> <!--logo on the left same line as nav bar-->
-            <h1>Room27</h1>
-            <p> Hello</p>
-        </div>
+        <nav class="nav bar navbar-light bg-light navbar-expand-sm">
+        <a href="index.html" class="navbar-brand">Event27</a>
 
-        <div>
-            <!--search bar-->
-        </div>
-
-        <nav>
-            <ul>
-                <li><a href="music.html"></a>Music Concerts</li>
-                <li><a href="workshops.html"></a>Workshops</li>
-                <li><a href="sports.html"></a>Sports</li>
-                <li><a href="contactus.html"></a>Contact Us</li>
+            <ul class="navbar-nav mr-auto">
+                <li class="navbar-item active"><a href="music.html" class="navlink"></a>Music Concerts</li>
+                <li class="navbar-item"><a href="workshops.html" class="navlink"></a>Workshops</li>
+                <li class="navbar-item"><a href="sports.html" class="navlink"></a>Sports</li>
+                <li class="navbar-item"><a href="contactus.html" class="navlink"></a>Contact Us</li>
             </ul>
+
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search Events" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
         </nav>
     
     </header>
 
-    <main>
-
-        <section>
-            <div> <!--main image-->
-                <img src="" alt="">
-            </div>
-        </section>
-
-        <section> <!--width 100-->
-            <h2>Just dropped</h2>
-        </section>
-
-        <section> <!--width 100-->
-            <h2>Last tickets</h2>
-        </section>
+    <main class="container-fluid">
     
     </main>
+
+    <section class="row">
+
+        <div class="col-6"><h2>Just dropped</h2></div>
+            
+        <div class="col-6"><h2>Last Tickets</h2></div>
+                
+    </section>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>    
+
 
     <footer>
     
