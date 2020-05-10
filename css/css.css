@@ -1,3 +1,41 @@
 body{
     font-family: 'DM Mono', monospace;
+    border:0;
+    padding: 0;
+    margin: 0;
 }
+
+li{
+    font-size: large;
+}
+
+.image-container{
+
+}
+
+.navbar-item{
+    font-size: 20px;
+    color: grey;
+}
+
+.navbar-nav{
+    padding-left: 15px;
+}
+
+.navbrand{
+    margin-left: 10px;
+}
+
+.navlink:link{
+    color:honeydew;
+    text-decoration: none;
+}
+
+.navlink:visited{
+    color:darkslategray;
+}
+
+.navlink:hover{
+    color: darkslategray;
+}
+

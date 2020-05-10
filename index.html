@@ -13,40 +13,66 @@
 
 <body>
 
-    <header class="container-fluid">
+    <header class="header-container">
 
-        <nav class="navbar navbar-light bg-dark navbar-expand-md">
-            <a href="index.html" class="navbar-brand">Event27</a>
+        <div class="container-lg">
 
-            <ul class="navbar-nav">
-                <li class="navbar-item active mr-2"><a href="music.html" class="navlink"></a>Music Concerts</li>
-                <li class="navbar-item mr-2"><a href="workshops.html" class="navlink"></a>Workshops</li>
-                <li class="navbar-item mr-2"><a href="sports.html" class="navlink"></a>Sports</li>
-                <li class="navbar-item mr-2"><a href="contactus.html" class="navlink"></a>Contact Us</li>
-            </ul>
+            <nav class="navbar navbar-light bg-dark navbar-expand-sm">
 
-            <form class="form-inline">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search Events" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </nav>
+                <div class="navbrand">
+                    <a href="index.html" class="navbar-brand"><h2>Event27</h2></a>
+                </div>
+
+                <!--create a hamburger button when the screen size is between 768 and 991px (small)-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <ul class="navbar-nav"> <!--items showing on the hamburguer button menu-->
+                        <li class="navbar-item active mr-4"><a href="music.html" class="navlink">Music</a></li>
+                        <li class="navbar-item mr-4"><a href="workshops.html" class="navlink">Workshops</a></li>
+                        <li class="navbar-item mr-4"><a href="sports.html" class="navlink">Sports</a></li>
+                        <li class="navbar-item mr-4"><a href="contactus.html" class="navlink">Contact Us</a></li>
+                    </ul>
+
+                </div>
+                <!-- do not show search button in the hamburguer button when the screen size is small-->
+                    <form class="form-inline d-none d-sm-block">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+
+                
+            </nav>
+        </div>    
     
     </header>
 
-    <main class="container-fluid">
+    <main class="image-container"> 
+        <section class="container-sm">
             <div class="row">
                 <div class= "col-12">
                     <img src="unstad.jpg" class="img-fluid" alt="responsive image">
                 </div>
             </div>
-    
+        </section>
     </main>
 
-    <section class="row">
+    <br>
+    <br>
 
-        <div class="col-6"><h2>Just dropped</h2></div>
-            
-        <div class="col-6"><h2>Last Tickets</h2></div>
+
+    <section class="extra-container">  
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6 md"><h2 class="text-center">Just dropped</h2></div>
+                
+                <div class="col-6 md"><h2 class="text-center">Last Tickets</h2></div>
+            </div>
+        </div>
                 
     </section>
     
