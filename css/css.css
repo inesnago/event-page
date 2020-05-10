@@ -9,10 +9,6 @@ li{
     font-size: large;
 }
 
-.image-container{
-
-}
-
 .navbar-item{
     font-size: 20px;
     color: grey;
@@ -22,8 +18,17 @@ li{
     padding-left: 15px;
 }
 
-.navbrand{
+.navbar{
+    width: 100%;
+}
+
+h2 .navbrand{
     margin-left: 10px;
+    color:indigo;
+}
+
+.navlink:visited{
+    color:honeydew;
 }
 
 .navlink:link{
@@ -31,11 +36,38 @@ li{
     text-decoration: none;
 }
 
-.navlink:visited{
-    color:darkslategray;
-}
-
 .navlink:hover{
     color: darkslategray;
 }
 
+@media (min-width: 600px) and (max-width:768px){
+    .button-responsive{
+        padding:2px 4px;
+        font-size:80%;
+        line-height: 1;
+        border-radius:3px;
+    }
+
+    .input-responsive{
+        padding: 2px; 
+    }
+}
+
+.heroimg{
+    height: 100vh;
+    background: url("../heroimg.jpg") no-repeat bottom right fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+div .col-12{
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    top: 300px;
+}
+
+d

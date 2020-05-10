@@ -15,12 +15,12 @@
 
     <header class="header-container">
 
-        <div class="container-lg">
+        <div class="container-xl">
 
             <nav class="navbar navbar-light bg-dark navbar-expand-sm">
 
                 <div class="navbrand">
-                    <a href="index.html" class="navbar-brand"><h2>Event27</h2></a>
+                    <a href="index.html" class="navbar-brand"><h2 class="font-weight-bold text-warning">Event27</h2></a>
                 </div>
 
                 <!--create a hamburger button when the screen size is between 768 and 991px (small)-->
@@ -31,7 +31,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
 
                     <ul class="navbar-nav"> <!--items showing on the hamburguer button menu-->
-                        <li class="navbar-item active mr-4"><a href="music.html" class="navlink">Music</a></li>
+                        <li class="navbar-item mr-4"><a href="music.html" class="navlink">Music</a></li>
                         <li class="navbar-item mr-4"><a href="workshops.html" class="navlink">Workshops</a></li>
                         <li class="navbar-item mr-4"><a href="sports.html" class="navlink">Sports</a></li>
                         <li class="navbar-item mr-4"><a href="contactus.html" class="navlink">Contact Us</a></li>
@@ -39,26 +39,71 @@
 
                 </div>
                 <!-- do not show search button in the hamburguer button when the screen size is small-->
-                    <form class="form-inline d-none d-sm-block">
-                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-
+                <form class="form-inline d-none d-sm-block">
+                    <input class="form-control input-responsive" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-secondary button-responsive" type="submit">Search</button>
+                </form>
                 
+
             </nav>
         </div>    
     
     </header>
 
-    <main class="image-container"> 
+    <main>
+        <section class="container-fluid heroimg">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Welcome to Event27</h2>
+                    <p>Be part of our club members and receive weekly updates of the latest events</p>
+                    <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#subscribeModal">Subscribe</button>
+                </div>
+            </div>
+
+            <div class="modal fade" id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Subscribe and Stay Tuned</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                <div class="modal-body">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                    
+        
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+                </div>
+                </div>
+            </div>
+        </section> 
+    </main>      
+    
+
+
+    <!--<main class="image-container"> 
         <section class="container-sm">
             <div class="row">
                 <div class= "col-12">
-                    <img src="unstad.jpg" class="img-fluid" alt="responsive image">
+                    <img src="heroimg.jpg" class="img-fluid" alt="responsive image">
                 </div>
             </div>
         </section>
-    </main>
+    </main>-->
 
     <br>
     <br>
