@@ -55,7 +55,7 @@
             <div class="row">
                 <div class="col-12">
                     <h2>Welcome to Event27</h2>
-                    <p>Be part of our club members and receive weekly updates of the latest events</p>
+                    <p>Join our club members and receive weekly updates of the latest events</p>
                     <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#subscribeModal">Subscribe</button>
                 </div>
             </div>
@@ -71,22 +71,23 @@
                     </div>
 
                 <div class="modal-body">
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="fname">
+                    <form action="" method="">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="fname" required>
+                        <br>
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lname" required>
+                        <br>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required> 
+                    </form>  <!--still need to solve the code above; cannot have a form and a modal together-->
 
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lname">
-
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
-                    
-        
                 </div>
 
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-dark">Submit</button>
                 </div>
+
                 </div>
                 </div>
             </div>
@@ -94,32 +95,37 @@
     </main>      
     
 
+    <br>
+    
 
-    <!--<main class="image-container"> 
-        <section class="container-sm">
-            <div class="row">
-                <div class= "col-12">
-                    <img src="heroimg.jpg" class="img-fluid" alt="responsive image">
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg">
+                <h2>Just Dropped</h2>
+                <p class="small text-muted">Check out what has just been announced</p>
+
+                <div class="card" style="width: 18rem;">
+                    <div class="img-wrap">
+                        <img src="cardimg1.jpg" class="card-img-top" alt="...">
+                        <h5>Jude Jones</h5>
+                        <p>UK tour</p>zz
+
                 </div>
+             
             </div>
-        </section>
-    </main>-->
-
-    <br>
-    <br>
-
-
-    <section class="extra-container">  
-
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-6 md"><h2 class="text-center">Just dropped</h2></div>
                 
-                <div class="col-6 md"><h2 class="text-center">Last Tickets</h2></div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-lg">
+                <h2>Last Tickets</h2>
+                <p class="small text-muted">Grab it before it's sold out</p>
             </div>
         </div>
-                
-    </section>
+    </div>
     
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

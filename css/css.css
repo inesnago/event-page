@@ -22,10 +22,6 @@ li{
     width: 100%;
 }
 
-h2 .navbrand{
-    margin-left: 10px;
-    color:indigo;
-}
 
 .navlink:visited{
     color:honeydew;
@@ -65,9 +61,15 @@ h2 .navbrand{
 div .col-12{
     color: #fff;
     text-align: center;
-    display: inline-block;
+    display: block;
     position: relative;
     top: 300px;
 }
 
-d
+.modal-body input{
+    display: block;
+}
+
+.margin{
+    margin-top: 10%;
+}
